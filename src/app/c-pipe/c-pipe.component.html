@@ -1,0 +1,26 @@
+<h1>Select field to sort out</h1>
+<select [(ngModel)]="sortOption">
+    <option value="rank">Rank</option>
+    <option value="name">Name</option>
+    <option value="followers">Followers</option>
+</select>
+<br><br>
+<input type="checkbox" value="true" [(ngModel)]="sortDesc"> Change the order?
+<br>
+<br>
+<h2>Records</h2>
+<table>
+    <tr style="text-align-last: left;">
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Followers</th>
+    </tr>
+    <tr *ngFor="let c of records | sort:sortOption:sortDesc" >
+        <td>{{c.rank}}</td>
+        <td>{{c.name}}</td>
+        <td>{{c.followers}}</td>
+    </tr>
+</table>
+
+
+

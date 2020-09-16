@@ -1,0 +1,10 @@
+<div>
+    <p>Pic a highlight color :</p>
+    <input type="radio" name="cl" value="Green" [(ngModel)]="clr">
+    <label>Green </label>
+    <input type="radio" name="cl" value="Yellow" [(ngModel)]="clr">
+    <label>Yellow</label>
+    <input type="radio" name="cl" value="Cyan" [(ngModel)]="clr">
+    <label>Cyan</label>
+    <p [appHighlight]="clr" >Highlight me!</p>
+</div>
