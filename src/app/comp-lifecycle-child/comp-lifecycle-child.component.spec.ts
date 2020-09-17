@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HighlightComponent } from './highlight.component';
+import { CompLifecycleChildComponent } from './comp-lifecycle-child.component';
 
-describe('HighlightComponent', () => {
-  let component: HighlightComponent;
-  let fixture: ComponentFixture<HighlightComponent>;
+describe('CompLifecycleChildComponent', () => {
+  let component: CompLifecycleChildComponent;
+  let fixture: ComponentFixture<CompLifecycleChildComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HighlightComponent ]
+      declarations: [ CompLifecycleChildComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HighlightComponent);
+    fixture = TestBed.createComponent(CompLifecycleChildComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

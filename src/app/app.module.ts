@@ -4,20 +4,22 @@ import {FormsModule} from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ChildComponent } from './child/child.component';
-import { HighlightComponent } from './highlight/highlight.component';
-import { HighlightDirective } from './highlight/highlight.directive';
 import { CPipeComponent } from './c-pipe/c-pipe.component';
 import { SortPipe } from './c-pipe/sort.pipe';
+import { CompLifecycleComponent } from './comp-lifecycle/comp-lifecycle.component';
+import { CAttrbDirectiveComponent } from './c-attrb-directive/c-attrb-directive.component';
+import { CDirectiveDirective } from './c-attrb-directive/c-directive.directive';
+import { CompLifecycleChildComponent } from './comp-lifecycle-child/comp-lifecycle-child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChildComponent,
-    HighlightComponent,
-    HighlightDirective,
     CPipeComponent,
-    SortPipe
+    SortPipe,
+    CompLifecycleComponent,
+    CAttrbDirectiveComponent,
+    CDirectiveDirective,
+    CompLifecycleChildComponent
   ],
   imports: [
     BrowserModule,

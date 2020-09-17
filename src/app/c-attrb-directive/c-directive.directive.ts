@@ -1,12 +1,11 @@
-import { Directive, ElementRef, Renderer2, Input, HostListener } from '@angular/core';
-import { noUndefined } from '@angular/compiler/src/util';
+import { Directive, ElementRef, Renderer2, Input, HostListener} from '@angular/core';
 
 @Directive({
-  selector: '[appHighlight]'
+  selector: '[appCDirective]'
 })
-export class HighlightDirective {
+export class CDirectiveDirective {
 
-  @Input('appHighlight') colr : string;
+  @Input('appCDirective') colr : string;
 
   constructor(private el: ElementRef, private renderer: Renderer2) {
     renderer.setStyle(el.nativeElement, 'cursor', 'pointer');

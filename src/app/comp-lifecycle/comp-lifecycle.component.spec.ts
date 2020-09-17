@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChildComponent } from './child.component';
+import { CompLifecycleComponent } from './comp-lifecycle.component';
 
-describe('ChildComponent', () => {
-  let component: ChildComponent;
-  let fixture: ComponentFixture<ChildComponent>;
+describe('CompLifecycleComponent', () => {
+  let component: CompLifecycleComponent;
+  let fixture: ComponentFixture<CompLifecycleComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ChildComponent ]
+      declarations: [ CompLifecycleComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ChildComponent);
+    fixture = TestBed.createComponent(CompLifecycleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

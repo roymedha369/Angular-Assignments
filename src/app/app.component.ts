@@ -6,5 +6,5 @@ import { Component, OnChanges } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent{
-  data : string;
+  
 }
