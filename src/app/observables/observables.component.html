@@ -1,0 +1,57 @@
+<h1 align="center">Welcome to Observables Demo</h1>
+<br>
+<br>
+<div class="row">
+  <div class="col-sm-10 offset-1">
+    <h4>Demo 1 -- NEXT Function</h4>
+    <button class="btn btn-primary" (click)="demo1()">Click here</button>    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-10 offset-1">
+    <h4>Demo 2 -- ERROR Function</h4>
+    <button class="btn btn-danger" (click)="demo2()">Click here</button>    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-10 offset-1">
+    <h4>Demo 3 -- COMPLETE Function</h4>
+    <button class="btn btn-warning" (click)="demo3()">Click here</button>    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-10 offset-1">
+    <h4>Demo 4 -- Asynchronous data streaming</h4>
+    <button class="btn btn-secondary" (click)="demo4()">Click here</button>    
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-10 offset-1">
+    <h4>Demo 5 -- Using Of </h4>
+    <button class="btn btn-primary" (click)="demo5()">Click here</button>    
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-10 offset-1">
+    <h4>Demo 6 -- JSON data using service file </h4>
+    <button class="btn btn-warning" (click)="demo6()">Click here</button>    
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-10 offset-1" *ngFor="let JSONdata of data"><br>
+    <div class="card" *ngIf="JSONdata.id != null">
+      <div class="card-header">
+        <h3 align="center">ID: {{JSONdata.id}}</h3>
+        <h4 >UserId: {{JSONdata.userId}} </h4>
+      </div>
+      <div class="card-body">
+        Title : {{JSONdata.title}} <br><br>
+        Description : {{JSONdata.body}}
+      </div>
+    </div>  <br>
+  </div>
+</div>

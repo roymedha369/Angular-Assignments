@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { CompLifecycleChildComponent } from './comp-lifecycle-child/comp-lifecyc
 import { CompInlineStylingComponent } from './comp-inline-styling/comp-inline-styling.component';
 import { CompExternalStylingComponent } from './comp-external-styling/comp-external-styling.component';
 import { TempStylingComponent } from './temp-styling/temp-styling.component';
+import { ObservablesComponent } from './observables/observables.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +27,15 @@ import { TempStylingComponent } from './temp-styling/temp-styling.component';
     CompLifecycleChildComponent,
     CompInlineStylingComponent,
     CompExternalStylingComponent,
-    TempStylingComponent
+    TempStylingComponent,
+    ObservablesComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
